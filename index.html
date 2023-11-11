@@ -13,98 +13,106 @@
 </head>
 
 <body class="flex justify-between items-center flex-col h-full bg-gray-100 dark:bg-gray-900">
-	<main class="flex justify-center items-center flex-col h-max sm:h-full w-11/12 sm:max-w-md py-10">
-		<div class="mb-10">
-			<h1 class="text-4xl font-semibold text-center dark:text-white">Bookmarks Separator</h1>
-			<p class="mt-3 text-lg leading-8 text-gray-600 dark:text-gray-500 text-center">Workaround for the missing bookmark separators in Chrome</p>
-		</div>
-		<div class="">
-			<div class="bg-white dark:bg-slate-800 overflow-hidden rounded-lg shadow">
-				<div id="icon" class="bg-white p-6 pb-5 pt-8">
-					<div class="text-center text-sm">
-						<div>
-							<div class="flex flex-row justify-center items-stretch max-w-max mx-auto cursor-not-allowed">
-								<div class="w-6 grow bg-gray-800">
-									<div class="h-full w-full rounded-br-xl bg-white"></div>
-								</div>
-								<div class="flex flex-row justify-center items-center max-w-max mx-auto p-2 rounded-t-xl bg-gray-800">
-									<div>
-										<a href="" title="Drag me!" class="block w-9 h-9 cursor-grab p-2 shadow-lg hover:shadow-md rounded-md overflow-hidden transition-all bg-white">
-											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'></svg>
-										</a>
-									</div>
-									<div class="text-white text-lg max-h-max leading-none ml-4 grow-0 w-12 overflow-hidden whitespace-nowrap">
-										Bookmarks Separator
-									</div>
-									<div class="pl-4 pr-2">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="12" class="fill-white mt-px"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
-									</div>
-								</div>
-								<div class="w-6 grow bg-gray-800">
-									<div class="h-full w-full rounded-bl-xl bg-white"></div>
-								</div>
-							</div>
-						</div>
-						<div>
-							<p class="mt-5 text-xs leading-5 text-gray-500 text-center">
-								<span class="font-semibold text-gray-800">Instructions:</span> Generate your separator and drag the icon to your bookmarks. Click <span class="italic">'Reset'</span> for transparent separator.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div id="form" class="border-t border-gray-200">
-					<form action="" method="GET">
-						<div class="bg-white p-6">
-							<div class="grid grid-cols-6 gap-6">
-								<div class="col-span-6">
-									<label for="style" class="block text-sm font-medium text-gray-700">Style</label>
-									<select name="style" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-										<option value="vertical">Vertical Bar</option>
-										<option value="horizontal">Horizontal Bar</option>
-										<option value="circle">Circle</option>
-									</select>
-								</div>
-								<div class="col-span-6">
-									<label for="width" class="block text-sm font-medium text-gray-700">Size</label>
-									<input type="number" name="width" min="0" max="16" placeholder="0-16" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-								</div>
-								<div class="col-span-6">
-									<label for="color" class="block text-sm font-medium text-gray-700">Color</label>
-									<input type="text" name="color" placeholder="HEX, RGB(A), CSS Color Names" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
-								</div>
-							</div>
-						</div>
-						<div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-							<button type="submit" class="inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm">Generate</button>
-							<button onclick="window.location.replace(location.pathname);return false;" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">Reset</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="">
-		<div class="p-6">
-			<p class="text-center text-xs text-gray-500">Version 1.0 made by <a href="https://github.com/AAAC290992" target="_blank" class="font-semibold text-gray-600 hover:underline">@AAAC290992</a> (on <a href="https://github.com/AAAC290992/bookmarks-separator/" target="_blank" class="font-semibold text-gray-600 hover:underline">GitHub</a>)</p>
-		</div>
-	</footer>
+    <main class="flex justify-center items-center flex-col h-max sm:h-full w-11/12 sm:max-w-md py-10">
+        <div class="mb-10">
+            <h1 class="text-4xl font-semibold text-center dark:text-white">Bookmarks Separator</h1>
+            <p class="mt-3 text-lg leading-8 text-gray-600 dark:text-gray-500 text-center">Workaround for the missing bookmark separators in Chrome</p>
+        </div>
+        <div class="">
+            <div class="bg-white dark:bg-slate-800 overflow-hidden rounded-lg shadow">
+                <div id="icon" class="bg-white p-6 pb-5 pt-8">
+                    <div class="text-center text-sm">
+                        <div>
+                            <div class="flex flex-row justify-center items-stretch max-w-max mx-auto cursor-not-allowed">
+                                <div class="w-6 grow bg-gray-800">
+                                    <div class="h-full w-full rounded-br-xl bg-white"></div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center max-w-max mx-auto p-2 rounded-t-xl bg-gray-800">
+                                    <div>
+                                        <a href="" title="Drag me!" class="block w-9 h-9 cursor-grab p-2 shadow-lg hover:shadow-md rounded-md overflow-hidden transition-all bg-white">
+                                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'></svg>
+                                        </a>
+                                    </div>
+                                    <div class="text-white text-lg max-h-max leading-none ml-4 grow-0 w-12 overflow-hidden whitespace-nowrap">
+                                        Bookmarks Separator
+                                    </div>
+                                    <div class="pl-4 pr-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="12" class="fill-white mt-px"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="w-6 grow bg-gray-800">
+                                    <div class="h-full w-full rounded-bl-xl bg-white"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mt-5 text-xs leading-5 text-gray-500 text-center">
+                                <span class="font-semibold text-gray-800">Instructions:</span> Generate your separator and drag the icon to your bookmarks. Click <span class="italic">'Reset'</span> for transparent separator.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="form" class="border-t border-gray-200">
+                    <form action="" method="GET">
+                        <div class="bg-white p-6">
+                            <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6">
+                                    <label for="style" class="block text-sm font-medium text-gray-700">Style</label>
+                                    <select name="style" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                                        <option value="vertical">Vertical Bar</option>
+                                        <option value="v2">Vertical Dual Bar</option>
+                                        <option value="horizontal">Horizontal Bar</option>
+                                        <option value="h2">Horizontal Dual Bar</option>
+                                        <option value="circle">Circle</option>
+                                    </select>
+                                </div>
+                                <div class="col-span-6">
+                                    <label for="width" class="block text-sm font-medium text-gray-700">Size</label>
+                                    <input type="number" name="width" min="0" max="16" placeholder="0-16" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                                </div>
+                                <div class="col-span-6">
+                                    <label for="color" class="block text-sm font-medium text-gray-700">Color</label>
+                                    <input type="text" name="color" placeholder="HEX, RGB(A), CSS Color Names" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                                    <input type="text" name="color2" placeholder="HEX, RGB(A), CSS Color Names" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                            <button type="submit" class="inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm">Generate</button>
+                            <button onclick="window.location.replace(location.pathname);return false;" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="">
+        <div class="p-6">
+            <p class="text-center text-xs text-gray-500">Version 1.0 made by <a href="https://github.com/AAAC290992" target="_blank" class="font-semibold text-gray-600 hover:underline">@AAAC290992</a> (on <a href="https://github.com/AAAC290992/bookmarks-separator/" target="_blank" class="font-semibold text-gray-600 hover:underline">GitHub</a>)</p>
+        </div>
+    </footer>
     <script>
         (() => {
-			const a = document.querySelector('a'),
-				r = document.querySelector('form'),
-				f = document.querySelector('link[rel="icon"]'),
-				p = new URLSearchParams(window.location.search),
-				o = p.get('style'),
-				c = p.get('color'),
-				w = p.get('width'),
-				l = `<line ${ o === 'vertical' ? 'x1="8" x2="8" y1="0" y2="16"' : 'x1="0" x2="16" y1="8" y2="8"' } stroke="${c}" stroke-width="${w}"/>`,
-				v = `<circle cx="8" cy="8" r="${w/2}" fill="${c}"/>`,
-				s = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">${ o === 'circle' ? v : l }</svg>`;
-			a.innerHTML = s;
-			f.href = `data:image/svg+xml,${encodeURIComponent(s)}`;
-			r.style.value = o || 'vertical';
-			r.width.value = w;
-			r.color.value = c;
+            const a = document.querySelector('a'),
+                r = document.querySelector('form'),
+                f = document.querySelector('link[rel="icon"]'),
+                p = new URLSearchParams(window.location.search),
+                o = p.get('style'),
+                c = p.get('color'),
+                c2 = p.get('color2'),
+                w = 1 * p.get('width'),
+                l = `<line ${ o.slice(0, -1) === 'vertical' ? 'x1="8" x2="8" y1="0" y2="16"' : 'x1="0" x2="16" y1="8" y2="8"' } stroke="${c}" stroke-width="${w}"/>`,
+                l2 = `<line ${ o.slice(0, -1) === 'vertical' ? `x1="${ w+9 }" x2="${w+9}" y1="0" y2="16"` : `x1="0" x2="16" y1="${ w+9 }" y2="${w+9}"` } stroke="${c2}" stroke-width="${w}"/>`
+                console.log(`${l2}`)
+                circle = `<circle cx="8" cy="8" r="${w/2}" fill="${c}"/>`,
+                circle2 = `<circle cx="8" cy="8" r="${w/2}" fill="${c2}"/>`,
+                s = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">${ o === 'circle' ? circle : l + (o.slice(-1) === '2' ? l2 : '') }</svg>`;
+            a.innerHTML = s;
+            f.href = `data:image/svg+xml,${encodeURIComponent(s)}`;
+            r.style.value = o || 'vertical';
+            r.width.value = w;
+            r.color.value = c;
+            r.color2.value = c2;
         })();
     </script>
 </body>
